@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+    <record model="account.tax.code.template" id="au_gst_code">
+        <field name="name">Australian GST</field>
+		<field name="sign">1</field>
+    </record>
+    
+    <record model="account.tax.code.template" id="au_gst_code_balance_net">
+        <field name="name">Net GST to be claimed/remitted</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">1</field>
+    </record>
+	<record model="account.tax.code.template" id="au_gst_sales">
+        <field name="name">GST collected on Sales and other outputs</field>
+        <field name="parent_id" ref="au_gst_code_balance_net"/>
+		<field name="sign">1</field>
+    </record>
+	<record model="account.tax.code.template" id="au_gst_paid">
+        <field name="name">GST paid on purchases</field>
+        <field name="parent_id" ref="au_gst_code_balance_net"/>
+		<field name="sign">-1</field>
+    </record>
+	
+	<record model="account.tax.code.template" id="au_gst_sales_base">
+        <field name="name">Total Sales ex GST (G1)</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+	
+	<record model="account.tax.code.template" id="au_gst_sales_export">
+        <field name="name">Export Sales (G2)</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+	
+	<record model="account.tax.code.template" id="au_gst_sales_free">
+        <field name="name">Other GST Free Sales (G3)</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+	
+	<record model="account.tax.code.template" id="au_gst_paid_cap">
+        <field name="name">Capital Purchases (G10)</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+	
+	<record model="account.tax.code.template" id="au_gst_paid_ncap">
+        <field name="name">Non-Capital Purchases (G11)</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+
+	<record model="account.tax.code.template" id="au_gst_paid_imp">
+        <field name="name">Import Purchases</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+	<record model="account.tax.code.template" id="au_gst_paid_nil">
+        <field name="name">Other Exempt Purchases</field>
+        <field name="parent_id" ref="au_gst_code"/>
+		<field name="sign">0</field>
+    </record>
+    </data>
+</openerp>

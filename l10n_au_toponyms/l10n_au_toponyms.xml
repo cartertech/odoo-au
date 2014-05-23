@@ -1,0 +1,52 @@
+<openerp>
+	<data noupdate="1">
+
+		<record model='res.country.state' id='ACT'>
+			<field name='name'>Australian Capital Territory</field>
+			<field name='code'>ACT</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='NSW'>
+			<field name='name'>New South Wales</field>
+			<field name='code'>NSW</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='VIC'>
+			<field name='name'>Victoria</field>
+			<field name='code'>VIC</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='TAS'>
+			<field name='name'>Tasmania</field>
+			<field name='code'>TAS</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='SA'>
+			<field name='name'>South Australia</field>
+			<field name='code'>SA</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='WA'>
+			<field name='name'>Western Australia</field>
+			<field name='code'>WA</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='NT'>
+			<field name='name'>Northern Territory</field>
+			<field name='code'>NT</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+		
+		<record model='res.country.state' id='QLD'>
+			<field name='name'>Queensland</field>
+			<field name='code'>QLD</field>
+			<field search="[('code','=','AU')]" model='res.country' name='country_id'/>
+		</record>
+	</data>
+</openerp>
