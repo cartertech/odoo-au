@@ -33,6 +33,36 @@
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="amount_python_compute">result = BASICP + categories.ALW - categories.DED - categories.SDED</field>
         </record>
+     
+     <!-- Australian Tax Schedules -->
+     <record id="au_tax_schedule_1" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax Free Threshold</field>
+            <field name="schedule">1</field>
+        </record>
+      <record id="au_tax_schedule_2" model="hr.payroll.tax.schedule">
+            <field name="name">Tax Free Threshold</field>
+            <field name="schedule">2</field>
+        </record>
+      <record id="au_tax_schedule_3" model="hr.payroll.tax.schedule">
+            <field name="name">Foreign Resident</field>
+            <field name="schedule">3</field>
+        </record>
+      <record id="au_tax_schedule_4a" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax File Number (Resident)</field>
+            <field name="schedule">4a</field>
+        </record>
+      <record id="au_tax_schedule_4b" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax File Number (Foreign Resident)</field>
+            <field name="schedule">4b</field>
+        </record>
+      <record id="au_tax_schedule_5" model="hr.payroll.tax.schedule">
+            <field name="name">Full Medicate Exemption</field>
+            <field name="schedule">5</field>
+        </record>
+      <record id="au_tax_schedule_6" model="hr.payroll.tax.schedule">
+            <field name="name">Half Medicare Exemption</field>
+            <field name="schedule">6</field>
+        </record>
 
     </data>
 </openerp>

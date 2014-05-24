@@ -2,12 +2,59 @@
 <openerp>
   <data>
 
-        <record id="hr_payroll_paygw_table_form" model="ir.ui.view">
+        <record id="hr_payroll_tax_schedule_form" model="ir.ui.view">
+            <field name="name">hr.payroll.tax.schedule.form</field>
+            <field name="model">hr.payroll.tax.schedule</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Australian Tax Schedule">
+                   <field name="name" select="1"/>
+                   <field name="schedule"/>
+                </form>
+          </field>
+        </record>
+        
+        <record id="hr_payroll_tax_schedule_search" model="ir.ui.view">
+            <field name="name">hr.payroll.tax.schedule.search</field>
+            <field name="model">hr.payroll.tax.schedule</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Australian Tax Schedule">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        
+        <record id="hr_payroll_tax_schedule_tree" model="ir.ui.view">
+          <field name="name">hr.payroll.tax.schedule.tree</field>
+          <field name="model">hr.payroll.tax.schedule</field>
+          <field name="type">tree</field>
+          <field name="arch" type="xml">
+              <tree string="Australian Tax Schedule">
+                   <field name="name"/>
+                   <field name="schedule"/>
+                </tree>
+            </field>
+        </record>
+                
+      <record id="action_hr_payroll_tax_schedule_tree" model="ir.actions.act_window">
+          <field name="name">Australian Tax Schedule</field>
+          <field name="res_model">hr.payroll.tax.schedule</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+          <field name="view_id" ref="hr_payroll_tax_schedule_tree"/>
+          <field name="search_view_id" ref="hr_payroll_tax_schedule_search"/>
+      </record>
+  
+      <menuitem id="menu_hr_payroll_tax_schedule_tree" action="action_hr_payroll_tax_schedule_tree" parent="hr_payroll.payroll_configure"/>
+      
+            <record id="hr_payroll_paygw_table_form" model="ir.ui.view">
             <field name="name">hr.payroll.paygw.table.form</field>
             <field name="model">hr.payroll.paygw.table</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Australian PAYGW Table">
+					<field name="schedule"/>
                    <field name="name" select="1"/>
                    <field name="year" select="1"/>
                    <field name="date_from"/>
