@@ -108,5 +108,44 @@
       </record>
   
       <menuitem id="menu_hr_payroll_paygw_table_tree" action="action_hr_payroll_paygw_table_tree" parent="hr_payroll.payroll_configure"/>
+      
+       <record id="hr_employee_view_form_au" model="ir.ui.view">
+          <field name="name">hr.employee.view.form.au</field>
+          <field name="model">hr.employee</field>
+          <field name="type">form</field>
+          <field name="inherit_id" ref="hr.view_employee_form"/>
+          <field name="arch" type="xml">
+              <notebook position="inside">
+                  <page string="Australian Payroll">
+                    <group>
+                        <group string="Tax">
+                            <field name="taxtable"/>
+                        </group>
+                        <group string="Superannuation">
+                            <field name="superfund"/>
+                            <field name="super_acct"/>
+                        </group>
+                        <group string="Payslips">
+                            <field name="payslip_delivery"/>
+                        </group>
+                    </group>
+                  </page>
+              </notebook>
+          </field>
+      </record>
+      
+       <record id="view_hr_job_form_au" model="ir.ui.view">
+          <field name="name">hr.job.form.au</field>
+          <field name="model">hr.job</field>
+          <field name="type">form</field>
+          <field name="inherit_id" ref="hr.view_hr_job_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='department_id']" position="after">
+                  <field name="terms_type"/>
+                  <field name="terms_doc"/>
+                  <field name="terms_url"/>
+              </xpath>
+          </field>
+      </record>
   </data>
 </openerp>

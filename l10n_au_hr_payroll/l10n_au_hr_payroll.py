@@ -22,16 +22,16 @@
 
 from openerp.osv import fields, orm
 
-class hr_contract_au(orm.Model):
-	_inherit = 'hr.contract'
+class hr_job_au(orm.Model):
+	_inherit = 'hr.job'
 
 	_columns = {
-		'terms_type': fields.selection([('Award',1),('Enterprise Agreement',2),('Contract',3),('Other',4)], 'Source of Employment Terms'),
-		'terms_doc': fields.char('Employment Terms Document',size=128),
-		'terms_class': fields.char('Position Classification',size=128),
+		'terms_type': fields.selection([('ma','Award'),('ea','Enterprise Agreement'),('co','Contract'),('ot','Other')], 'Source of Employment Terms'),
+		'terms_doc': fields.char('Employment Terms Document',size=64),
+		'terms_url': fields.char('URL of Terms Document',size=64),
     }
 
-hr_contract_au()
+hr_job_au()
 
 
 # Tax Table for storing the various schedules of tables (e.g. No Tax Free,
@@ -54,7 +54,7 @@ class hr_employee_au(orm.Model):
 		'superfund': fields.many2one('res.partner', 'Superannuation Fund'),
 		'super_acct': fields.char('Superannuation Account', size=50),
 		'taxtable': fields.many2one('hr.payroll.tax.schedule','Tax Schedule'),
-		'payslip_delivery': fields.selection([('Print',1),('Email',2),('Both',3)], 'Payslip Delivery'),
+		'payslip_delivery': fields.selection([('p','Print'),('e','Email'),('b','Both')], 'Payslip Delivery'),
   }
 
 hr_employee_au()
