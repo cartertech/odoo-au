@@ -38,7 +38,7 @@
         </record>
                 
       <record id="action_hr_payroll_tax_schedule_tree" model="ir.actions.act_window">
-          <field name="name">Australian Tax Schedule</field>
+          <field name="name">Australian Tax Scales</field>
           <field name="res_model">hr.payroll.tax.schedule</field>
           <field name="view_type">form</field>
           <field name="view_mode">tree,form</field>
@@ -54,9 +54,9 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Australian PAYGW Table">
-					<field name="schedule"/>
+				   <field name="schedule" on_change="onchange_year(year,schedule)"/>
+                   <field name="year" select="1" on_change="onchange_year(year,schedule)"/>
                    <field name="name" select="1"/>
-                   <field name="year" select="1"/>
                    <field name="date_from"/>
                    <field name="date_to"/>
                    <newline/>

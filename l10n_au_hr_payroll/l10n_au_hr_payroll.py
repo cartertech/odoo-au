@@ -43,9 +43,9 @@ class hr_payroll_tax_schedule(orm.Model):
 	
 	_columns = {
 	'name': fields.char('Description', size=128),
-	'schedule': fields.char('Tax Schedule', size=10),
+	'schedule': fields.char('Tax Scale', size=10),
 	}
-	
+
 hr_payroll_tax_schedule()
 
 class hr_employee_au(orm.Model):
@@ -64,9 +64,21 @@ hr_employee_au()
 class hr_payroll_paygw_table(orm.Model):
 	_name = 'hr.payroll.paygw.table'
 	_description = 'Australian PAYG Withholding Table'
+
+	def onchange_year(self, cr, uid, ids, year, sched):
+		res = {}
+		if sched:
+			sched_obj = self.pool.get('hr.payroll.tax.schedule').browse(cr, uid, sched)
+			res['name'] = sched_obj.name
+		else:
+			res['name'] = ''
+		if year:
+			res['name'] += ' (' + str(year) + ')'
+		
+		return {'value': res}
       
 	_columns = {
-		'schedule': fields.many2one('hr.payroll.tax.schedule', 'Tax Schedule'),
+		'schedule': fields.many2one('hr.payroll.tax.schedule', 'Tax Scale'),
 		'name': fields.char('Description', size=128),
 		'year': fields.integer('Year', required=True),
 		'date_from': fields.date('Date From'),

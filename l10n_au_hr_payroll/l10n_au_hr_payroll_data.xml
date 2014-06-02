@@ -35,6 +35,7 @@
         </record>
      
      <!-- Australian Tax Schedules -->
+     <!-- Standard Scales -->
      <record id="au_tax_schedule_1" model="hr.payroll.tax.schedule">
             <field name="name">No Tax Free Threshold</field>
             <field name="schedule">1</field>
@@ -63,6 +64,88 @@
             <field name="name">Half Medicare Exemption</field>
             <field name="schedule">6</field>
         </record>
+       
+       <!-- Non standard tax scales -->
+      <record id="au_tax_schedule_no" model="hr.payroll.tax.schedule">
+            <field name="name">No PAYG Tax Deduction</field>
+            <field name="schedule">NO</field>
+        </record>
+      <record id="au_tax_schedule_sas" model="hr.payroll.tax.schedule">
+            <field name="name">Senior Australian (Single)</field>
+            <field name="schedule">SAS</field>
+        </record>
+      <record id="au_tax_schedule_sis" model="hr.payroll.tax.schedule">
+            <field name="name">Senior Australian (Illness Separated)</field>
+            <field name="schedule">SIS</field>
+        </record>
+      <record id="au_tax_schedule_src" model="hr.payroll.tax.schedule">
+            <field name="name">Senior Australian (Memboer of Couple)</field>
+            <field name="schedule">SRC</field>
+        </record>
 
+	<!--HELP Scales-->
+	<record id="au_tax_schedule_1h" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax Free Threshold (with HELP debt)</field>
+            <field name="schedule">1h</field>
+        </record>
+      <record id="au_tax_schedule_2h" model="hr.payroll.tax.schedule">
+            <field name="name">Tax Free Threshold (with HELP debt)</field>
+            <field name="schedule">2h</field>
+        </record>
+      <record id="au_tax_schedule_3h" model="hr.payroll.tax.schedule">
+            <field name="name">Foreign Resident (with HELP debt)</field>
+            <field name="schedule">3h</field>
+        </record>
+      <record id="au_tax_schedule_5h" model="hr.payroll.tax.schedule">
+            <field name="name">Full Medicate Exemption (with HELP debt)</field>
+            <field name="schedule">5h</field>
+        </record>
+      <record id="au_tax_schedule_6h" model="hr.payroll.tax.schedule">
+            <field name="name">Half Medicare Exemption (with HELP debt)</field>
+            <field name="schedule">6h</field>
+        </record>
+     <!-- SFSS Scales -->
+     <record id="au_tax_schedule_1s" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax Free Threshold (with SFSS debt)</field>
+            <field name="schedule">1s</field>
+        </record>
+      <record id="au_tax_schedule_2s" model="hr.payroll.tax.schedule">
+            <field name="name">Tax Free Threshold (with SFSS debt)</field>
+            <field name="schedule">2s</field>
+        </record>
+      <record id="au_tax_schedule_3s" model="hr.payroll.tax.schedule">
+            <field name="name">Foreign Resident (with SFSS debt)</field>
+            <field name="schedule">3s</field>
+        </record>
+      <record id="au_tax_schedule_5s" model="hr.payroll.tax.schedule">
+            <field name="name">Full Medicate Exemption (with SFSS debt)</field>
+            <field name="schedule">5s</field>
+        </record>
+      <record id="au_tax_schedule_6s" model="hr.payroll.tax.schedule">
+            <field name="name">Half Medicare Exemption (with SFSS debt)</field>
+            <field name="schedule">6s</field>
+        </record>
+        
+        <!-- SFSS and HELP Scales -->
+        <record id="au_tax_schedule_1hs" model="hr.payroll.tax.schedule">
+            <field name="name">No Tax Free Threshold (with HELP and SFSS debt)</field>
+            <field name="schedule">1hs</field>
+        </record>
+      <record id="au_tax_schedule_2hs" model="hr.payroll.tax.schedule">
+            <field name="name">Tax Free Threshold (with HELP and SFSS debt)</field>
+            <field name="schedule">2hs</field>
+        </record>
+      <record id="au_tax_schedule_3hs" model="hr.payroll.tax.schedule">
+            <field name="name">Foreign Resident (with HELP and SFSS debt)</field>
+            <field name="schedule">3hs</field>
+        </record>
+      <record id="au_tax_schedule_5hs" model="hr.payroll.tax.schedule">
+            <field name="name">Full Medicate Exemption (with HELP and SFSS debt)</field>
+            <field name="schedule">5hs</field>
+        </record>
+      <record id="au_tax_schedule_6hs" model="hr.payroll.tax.schedule">
+            <field name="name">Half Medicare Exemption (with HELP and SFSS debt)</field>
+            <field name="schedule">6hs</field>
+        </record>
     </data>
 </openerp>
