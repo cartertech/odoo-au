@@ -22,18 +22,6 @@
 
 from openerp.osv import fields, orm
 
-class hr_job_au(orm.Model):
-	_inherit = 'hr.job'
-
-	_columns = {
-		'terms_type': fields.selection([('ma','Award'),('ea','Enterprise Agreement'),('co','Contract'),('ot','Other')], 'Source of Employment Terms'),
-		'terms_doc': fields.char('Employment Terms Document',size=64),
-		'terms_url': fields.char('URL of Terms Document',size=64),
-    }
-
-hr_job_au()
-
-
 # Tax Table for storing the various schedules of tables (e.g. No Tax Free,
 # Tax Free, Foreign Resident, etc)
 
@@ -44,20 +32,48 @@ class hr_payroll_tax_schedule(orm.Model):
 	_columns = {
 	'name': fields.char('Description', size=128),
 	'schedule': fields.char('Tax Scale', size=10),
+	'paygw_scales': fields.one2many('hr.payroll.paygw.table','schedule','Tax Scales'),
 	}
 
 hr_payroll_tax_schedule()
 
-class hr_employee_au(orm.Model):
+class hr_employee(orm.Model):
 	_inherit = 'hr.employee'
+		
 	_columns = {
 		'superfund': fields.many2one('res.partner', 'Superannuation Fund'),
 		'super_acct': fields.char('Superannuation Account', size=50),
 		'taxtable': fields.many2one('hr.payroll.tax.schedule','Tax Schedule'),
 		'payslip_delivery': fields.selection([('p','Print'),('e','Email'),('b','Both')], 'Payslip Delivery'),
   }
+	
+	
+	def calculate_paygw(self, date, taxinc):
+		""" Return the amount of tax to be withheld for the employee for the
+			requested date or false if no tax table defined
+            
 
-hr_employee_au()
+            :param date: date of the payment
+            :param taxinc: taxable income for the period 
+        """
+		res = {}
+		calcA = False
+		calcB = False
+#		for employees in self.browse(cr, uid, ids, context=context):
+#			num = False
+#			if employees.taxtable:
+#				tax_tables = self.pool.get('hr.payroll.paygw.table')
+#				for tax_table in tax_tables:
+#					if tax_table.schedule.id == employees.taxtable.id:
+#						for tax_rate in tax_table.line_ids:
+#							if taxinc <= tax_rate.inc_to:
+#								calcA = tax_rate.coeff_a
+#								calcB = tax_rate.coeff_b
+		
+#		if (calcA and calcB):
+#			res = (taxinc * calcA) - calcB
+		res = 0.5								 
+		return res
 
 # Withholding table for a specific tax year
 
@@ -76,7 +92,7 @@ class hr_payroll_paygw_table(orm.Model):
 			res['name'] += ' (' + str(year) + ')'
 		
 		return {'value': res}
-      
+
 	_columns = {
 		'schedule': fields.many2one('hr.payroll.tax.schedule', 'Tax Scale'),
 		'name': fields.char('Description', size=128),
@@ -99,5 +115,4 @@ class hr_payroll_paygw_table_line(orm.Model):
 		}
 
 	_rec_name = 'inc_from'
-
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

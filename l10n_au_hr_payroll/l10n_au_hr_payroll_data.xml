@@ -4,7 +4,7 @@
 
     <!-- Salary Rules Category -->
 
-        <record id="I" model="hr.salary.rule.category">
+        <record id="TAXI" model="hr.salary.rule.category">
             <field name="name">Taxable Income</field>
             <field name="code">TAXI</field>
         </record>
@@ -23,7 +23,8 @@
     <!-- Update salary rules of hr_payroll -->
 
         <record id="hr_payroll.hr_rule_basic" model="hr.salary.rule">
-            <field name="appears_on_payslip" eval="0"/>
+            <field name="appears_on_payslip" eval="1"/>
+            <field name="category_id" ref="TAXI"/>
         </record>
 
         <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
@@ -31,7 +32,48 @@
         </record>
 
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
-            <field name="amount_python_compute">result = BASICP + categories.ALW - categories.DED - categories.SDED</field>
+            <field name="amount_python_compute">result = categories.TAXI - categories.DED</field>
+        </record>
+        
+        <record id="rule_au_paygw" model="hr.salary.rule">
+            <field name="name">PAYG Withholding</field>
+            <field name="sequence" eval="150"/>
+            <field name="code">PAYGW</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="appears_on_payslip" eval="1"/>
+            <field name="active" eval="1"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+res = 0
+scales = employee.taxtable.paygw_scales 
+for scale in scales:
+    if payslip.date_to &gt;= scale.date_from:
+        if payslip.date_to &lt;= scale.date_to:
+            for line in scale.line_ids:
+                if categories.TAXI &gt;= line.inc_from:
+                   if categories.TAXI &lt;= line.inc_to:
+                        res = (categories.TAXI * line.coeff_a) - line.coeff_b
+                    
+result = res
+            </field>
+        </record>
+
+<!-- Wage Salary Rule for employees paid on an hourly basis -->      
+        <record id="rule_au_wage" model="hr.salary.rule">
+            <field name="name">Wage (Hourly)</field>
+            <field name="sequence" eval="10"/>
+            <field name="code">WG</field>
+            <field name="category_id" ref="TAXI"/>
+            <field name="appears_on_payslip" eval="1"/>
+            <field name="active" eval="1"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+#On the timesheet you must enter the code for the days worked as DW
+result_qty = worked_days.DW.number_of_hours
+result = contract.wage
+</field>
         </record>
      
      <!-- Australian Tax Schedules -->
