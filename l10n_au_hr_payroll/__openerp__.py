@@ -28,8 +28,8 @@
     'description': """
 Australian Payroll Rules.
 ======================
-
-    * A useless module that doesn't work
+Support for Australian payroll
+WORK IN PROGRESS
     """,
 
     'auto_install': False,
