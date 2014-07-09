@@ -34,7 +34,19 @@
         <record id="hr_payroll.hr_rule_net" model="hr.salary.rule">
             <field name="amount_python_compute">result = categories.TAXI - categories.DED</field>
         </record>
-        
+       
+		<!-- Tax Records -->
+		<record id="res_partner_ato" model="res.partner">
+        	<field name="name">Australian Taxation Office</field>
+        	<field name="supplier">1</field>
+        	<field eval="0" name="customer"/>
+    	</record>
+    
+    	<record id="contrib_register_payg" model="hr.contribution.register">
+        	<field name="name">PAYG Register</field>
+        	<field name="partner_id" ref="res_partner_ato"/>
+    	</record>
+    	
         <record id="rule_au_paygw" model="hr.salary.rule">
             <field name="name">PAYG Withholding</field>
             <field name="sequence" eval="150"/>
@@ -51,12 +63,12 @@ for scale in scales:
     if payslip.date_to &gt;= scale.date_from:
         if payslip.date_to &lt;= scale.date_to:
             for line in scale.line_ids:
-                if categories.TAXI &gt;= line.inc_from:
-                   if categories.TAXI &lt;= line.inc_to:
-                        res = (categories.TAXI * line.coeff_a) - line.coeff_b
+               if categories.TAXI &lt; line.inc_to:
+                    res = (categories.TAXI * line.coeff_a) - line.coeff_b
                     
 result = res
             </field>
+            <field name="register_id" ref="contrib_register_payg"/>
         </record>
 
 <!-- Wage Salary Rule for employees paid on an hourly basis -->      

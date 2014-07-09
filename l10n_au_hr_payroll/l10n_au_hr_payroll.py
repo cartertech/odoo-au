@@ -108,11 +108,10 @@ class hr_payroll_paygw_table_line(orm.Model):
 	_description = 'PAYG Line'
 	_columns = {
 		'table_id': fields.many2one('hr.payroll.paygw.table', 'Table'),
-		'inc_from': fields.float('Income From', digits=(16, 2), required=True),
 		'inc_to': fields.float('Income To', digits=(16, 2), required=True),
 		'coeff_a': fields.float('Coefficient (a)', digits=(16, 4)),
 		'coeff_b': fields.float('Coefficient (b)', digits=(16, 4)),
 		}
 
-	_rec_name = 'inc_from'
+	_rec_name = 'inc_to'
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
