@@ -64,6 +64,7 @@
                    <newline/>
                    <field name="line_ids" nolabel="1" colspan="4" widget="one2many_list">
                        <tree string="Lines" editable="top">
+                           <field name="inc_from"/>
                            <field name="inc_to"/>
                            <field name="coeff_a"/>
                            <field name="coeff_b"/>
