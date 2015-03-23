@@ -1154,7 +1154,7 @@ result = contract.wage
         <record id="au_tax_schedule_1s_2015_line9" model="hr.payroll.paygw.table.line">
             <field name="table_id" ref="au_tax_schedule_1s_2015"/>
             <field name="inc_from">3111</field>
-            <field name="inc_to"999999</field>
+            <field name="inc_to">999999</field>
             <field name="coeff_a">0.53</field>
             <field name="coeff_b">405.808</field>          
         </record>
@@ -1361,7 +1361,7 @@ result = contract.wage
             <field name="table_id" ref="au_tax_schedule_5s_2015"/>
             <field name="inc_from">3461</field>
             <field name="inc_to">999999</field>
-            <field name="coeff_a">0.51/field>
+            <field name="coeff_a">0.51</field>
             <field name="coeff_b">577.3654</field>          
         </record>
                 
@@ -1410,7 +1410,7 @@ result = contract.wage
         <record id="au_tax_schedule_6s_2015_line6" model="hr.payroll.paygw.table.line">
             <field name="table_id" ref="au_tax_schedule_6s_2015"/>
             <field name="inc_from">1025</field>
-            <field name="inc_to">1259/field>
+            <field name="inc_to">1259</field>
             <field name="coeff_a">0.3577</field>
             <field name="coeff_b">165.4429</field>          
         </record>
