@@ -157,25 +157,25 @@ result = contract.wage
             <field name="schedule">SRC</field>
         </record>
 
-	<!--HELP Scales-->
+	<!--HELP/TSL Scales-->
 	<record id="au_tax_schedule_1h" model="hr.payroll.tax.schedule">
-            <field name="name">No Tax Free Threshold (with HELP debt)</field>
+            <field name="name">No Tax Free Threshold (with HELP/TSL debt)</field>
             <field name="schedule">1h</field>
         </record>
       <record id="au_tax_schedule_2h" model="hr.payroll.tax.schedule">
-            <field name="name">Tax Free Threshold (with HELP debt)</field>
+            <field name="name">Tax Free Threshold (with HELP/TSL debt)</field>
             <field name="schedule">2h</field>
         </record>
       <record id="au_tax_schedule_3h" model="hr.payroll.tax.schedule">
-            <field name="name">Foreign Resident (with HELP debt)</field>
+            <field name="name">Foreign Resident (with HELP/TSL debt)</field>
             <field name="schedule">3h</field>
         </record>
       <record id="au_tax_schedule_5h" model="hr.payroll.tax.schedule">
-            <field name="name">Full Medicate Exemption (with HELP debt)</field>
+            <field name="name">Full Medicate Exemption (with HELP/TSL debt)</field>
             <field name="schedule">5h</field>
         </record>
       <record id="au_tax_schedule_6h" model="hr.payroll.tax.schedule">
-            <field name="name">Half Medicare Exemption (with HELP debt)</field>
+            <field name="name">Half Medicare Exemption (with HELP/TSL debt)</field>
             <field name="schedule">6h</field>
         </record>
      <!-- SFSS Scales -->
@@ -200,25 +200,25 @@ result = contract.wage
             <field name="schedule">6s</field>
         </record>
         
-        <!-- SFSS and HELP Scales -->
+        <!-- SFSS and HELP/TSL Scales -->
         <record id="au_tax_schedule_1hs" model="hr.payroll.tax.schedule">
-            <field name="name">No Tax Free Threshold (with HELP and SFSS debt)</field>
+            <field name="name">No Tax Free Threshold (with HELP/TSL and SFSS debt)</field>
             <field name="schedule">1hs</field>
         </record>
       <record id="au_tax_schedule_2hs" model="hr.payroll.tax.schedule">
-            <field name="name">Tax Free Threshold (with HELP and SFSS debt)</field>
+            <field name="name">Tax Free Threshold (with HELP/TSL and SFSS debt)</field>
             <field name="schedule">2hs</field>
         </record>
       <record id="au_tax_schedule_3hs" model="hr.payroll.tax.schedule">
-            <field name="name">Foreign Resident (with HELP and SFSS debt)</field>
+            <field name="name">Foreign Resident (with HELP/TSL and SFSS debt)</field>
             <field name="schedule">3hs</field>
         </record>
       <record id="au_tax_schedule_5hs" model="hr.payroll.tax.schedule">
-            <field name="name">Full Medicate Exemption (with HELP and SFSS debt)</field>
+            <field name="name">Full Medicate Exemption (with HELP/TSL and SFSS debt)</field>
             <field name="schedule">5hs</field>
         </record>
       <record id="au_tax_schedule_6hs" model="hr.payroll.tax.schedule">
-            <field name="name">Half Medicare Exemption (with HELP and SFSS debt)</field>
+            <field name="name">Half Medicare Exemption (with HELP/TSL and SFSS debt)</field>
             <field name="schedule">6hs</field>
         </record>
         <!-- 2015 Tax Scales -->
@@ -511,7 +511,7 @@ result = contract.wage
         
          <record id="au_tax_schedule_1h_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_1h"/>
-            <field name="name">No Tax Free Threshold (with HELP debt) (2015)</field>
+            <field name="name">No Tax Free Threshold (with HELP/TSL debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -624,7 +624,7 @@ result = contract.wage
 
          <record id="au_tax_schedule_2h_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_2h"/>
-            <field name="name">Tax Free Threshold (with HELP debt) (2015)</field>
+            <field name="name">Tax Free Threshold (with HELP/TSL debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -751,7 +751,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_3h_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_3h"/>
-            <field name="name">Foreign Resident (with HELP debt) (2015)</field>
+            <field name="name">Foreign Resident (with HELP/TSL debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -850,7 +850,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_5h_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_5h"/>
-            <field name="name">Full Medicare Exemption (with HELP debt) (2015)</field>
+            <field name="name">Full Medicare Exemption (with HELP/TSL debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -963,7 +963,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_6h_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_6h"/>
-            <field name="name">Half Medicare Exemption (with HELP debt) (2015)</field>
+            <field name="name">Half Medicare Exemption (with HELP/TSL debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -1452,7 +1452,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_1hs_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_1hs"/>
-            <field name="name">No Tax Free Threshold (with HELP &amp; FS debt) (2015)</field>
+            <field name="name">No Tax Free Threshold (with HELP/TSL &amp; FS debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -1565,7 +1565,7 @@ result = contract.wage
 
          <record id="au_tax_schedule_2hs_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_2hs"/>
-            <field name="name">Tax Free Threshold (with HELP &amp; FS debt) (2015)</field>
+            <field name="name">Tax Free Threshold (with HELP/TSL &amp; FS debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -1692,7 +1692,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_3hs_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_3hs"/>
-            <field name="name">Foreign Resident (with HELP &amp; FS debt) (2015)</field>
+            <field name="name">Foreign Resident (with HELP/TSL &amp; FS debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -1791,7 +1791,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_5hs_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_5hs"/>
-            <field name="name">Full Medicare Exemption (with HELP &amp; FS debt) (2015)</field>
+            <field name="name">Full Medicare Exemption (with HELP/TSL &amp; FS debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -1904,7 +1904,7 @@ result = contract.wage
         
         <record id="au_tax_schedule_6hs_2015" model="hr.payroll.paygw.table">
             <field name="schedule" ref="au_tax_schedule_6hs"/>
-            <field name="name">Half Medicare Exemption (with HELP &amp; debt) (2015)</field>
+            <field name="name">Half Medicare Exemption (with HELP/TSL &amp; debt) (2015)</field>
             <field name="year">2015</field>
             <field name="date_from">2014-07-01</field>
             <field name="date_to">2015-06-30</field>
@@ -2023,6 +2023,1801 @@ result = contract.wage
         </record>
         <record id="au_tax_schedule_6hs_2015_line17" model="hr.payroll.paygw.table.line">
             <field name="table_id" ref="au_tax_schedule_6hs_2015"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.6</field>
+            <field name="coeff_b">577.366</field>          
+        </record>
+        
+        <!-- 2016 Tax Scales -->
+         <record id="au_tax_schedule_1_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_1"/>
+            <field name="name">No Tax Free Threshold (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_1_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">45</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">0.19</field>          
+        </record>
+        <record id="au_tax_schedule_1_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">45</field>
+            <field name="inc_to">361</field>
+            <field name="coeff_a">0.2321</field>
+            <field name="coeff_b">1.8961</field>          
+        </record>
+        <record id="au_tax_schedule_1_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">361</field>
+            <field name="inc_to">932</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">932</field>
+            <field name="inc_to">1188</field>
+            <field name="coeff_a">0.3450</field>
+            <field name="coeff_b">41.173</field>          
+        </record>
+        <record id="au_tax_schedule_1_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">1188</field>
+            <field name="inc_to">3111</field>
+            <field name="coeff_a">0.39</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1_2016"/>
+            <field name="inc_from">3111</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">405.808</field>          
+        </record>
+        
+        <record id="au_tax_schedule_2_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_2"/>
+            <field name="name">Tax Free Threshold (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_2_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">395</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">395</field>
+            <field name="inc_to">493</field>
+            <field name="coeff_a">0.29</field>
+            <field name="coeff_b">106.9673</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">493</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.21</field>
+            <field name="coeff_b">67.4642</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.345</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.39</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">577.3662</field>          
+        </record>
+        
+        <record id="au_tax_schedule_3_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_3"/>
+            <field name="name">Foreign Resident (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_3_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.3250</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.37</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">415.3846</field>          
+        </record>
+        
+        <record id="au_tax_schedule_4a_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_4a"/>
+            <field name="name">No Tax File Number (Resident) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_4a_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_4a_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        
+        <record id="au_tax_schedule_4b_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_4b"/>
+            <field name="name">No Tax File Number (Foreign Resident) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_4b_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_4a_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        
+        <record id="au_tax_schedule_5_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_5"/>
+            <field name="name">Full Medicare Exemption (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_5_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_5_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_5_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3277</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.3250</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">3641</field>
+            <field name="coeff_a">0.37</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+        <record id="au_tax_schedule_5_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5_2016"/>
+            <field name="inc_from">3641</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">577.3654</field>          
+        </record>
+               
+        <record id="au_tax_schedule_6_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_6"/>
+            <field name="name">Half Medicare Exemption (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_6_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">660</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">660</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.2400</field>
+            <field name="coeff_b">100.5087</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">826</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">198.4875</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">826</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3377</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.335</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.38</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.48</field>
+            <field name="coeff_b">577.366</field>          
+        </record>
+        
+         <record id="au_tax_schedule_1h_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_1h"/>
+            <field name="name">No Tax Free Threshold (with HELP/TSL/TSL debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_1h_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">45</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">0.19</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">45</field>
+            <field name="inc_to">361</field>
+            <field name="coeff_a">0.2321</field>
+            <field name="coeff_b">1.8961</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">361</field>
+            <field name="inc_to">690</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">690</field>
+            <field name="inc_to">809</field>
+            <field name="coeff_a">0.3877</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">809</field>
+            <field name="inc_to">928</field>
+            <field name="coeff_a">0.3927</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">928</field>
+            <field name="inc_to">932</field>
+            <field name="coeff_a">0.3977</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">932</field>
+            <field name="inc_to">995</field>
+            <field name="coeff_a">0.395</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">995</field>
+            <field name="inc_to">1095</field>
+            <field name="coeff_a">0.4</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1095</field>
+            <field name="inc_to">1188</field>
+            <field name="coeff_a">0.4050</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1188</field>
+            <field name="inc_to">1216</field>
+            <field name="coeff_a">0.45</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1216</field>
+            <field name="inc_to">1298</field>
+            <field name="coeff_a">0.455</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1298</field>
+            <field name="inc_to">1464</field>
+            <field name="coeff_a">0.46</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1464</field>
+            <field name="inc_to">1583</field>
+            <field name="coeff_a">0.465</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">1583</field>
+            <field name="inc_to">3111</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1h_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1h_2016"/>
+            <field name="inc_from">3111</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.57</field>
+            <field name="coeff_b">405.808</field>          
+        </record>
+
+         <record id="au_tax_schedule_2h_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_2h"/>
+            <field name="name">Tax Free Threshold (with HELP/TSL debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_2h_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">395</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">395</field>
+            <field name="inc_to">493</field>
+            <field name="coeff_a">0.29</field>
+            <field name="coeff_b">106.9673</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">493</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.21</field>
+            <field name="coeff_b">67.4642</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3877</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3927</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3977</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.395</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.4</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.405</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.45</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.455</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.46</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.465</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2h_2016_line16" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2h_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.57</field>
+            <field name="coeff_b">577.3662</field>          
+        </record>
+        
+        <record id="au_tax_schedule_3h_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_3h"/>
+            <field name="name">Foreign Resident (with HELP/TSL debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_3h_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3250</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3650</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.37</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.375</field>
+            <field name="coeff_b">0.325</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.38</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.385</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+
+        <record id="au_tax_schedule_3h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.435</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.44</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.445</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.45</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3h_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3h_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.55</field>
+            <field name="coeff_b">415.3846</field>          
+        </record>
+        
+        <record id="au_tax_schedule_5h_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_5h"/>
+            <field name="name">Full Medicare Exemption (with HELP/TSL debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_5h_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3277</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3677</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3727</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.375</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.38</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.385</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5h_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5h_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.435</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5h_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.44</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5h_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.445</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5h_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.45</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5h_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5h_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.55</field>
+            <field name="coeff_b">577.3654</field>          
+        </record>
+        
+        <record id="au_tax_schedule_6h_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_6h"/>
+            <field name="name">Half Medicare Exemption (with HELP/TSL debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_6h_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">660</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">660</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.24</field>
+            <field name="coeff_b">100.5087</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">826</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">198.4875</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">826</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3377</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3827</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3877</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.3850</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.39</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.395</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.44</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.445</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.45</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.455</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line16" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.46</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6h_2016_line17" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6h_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.56</field>
+            <field name="coeff_b">577.366</field>          
+        </record>
+        
+        <record id="au_tax_schedule_1s_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_1s"/>
+            <field name="name">No Tax Free Threshold (with FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_1s_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">45</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">0.19</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">45</field>
+            <field name="inc_to">361</field>
+            <field name="coeff_a">0.2321</field>
+            <field name="coeff_b">1.8961</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">361</field>
+            <field name="inc_to">690</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">690</field>
+            <field name="inc_to">928</field>
+            <field name="coeff_a">0.3677</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">928</field>
+            <field name="inc_to">932</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">932</field>
+            <field name="inc_to">1188</field>
+            <field name="coeff_a">0.375</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">1188</field>
+            <field name="inc_to">1464</field>
+            <field name="coeff_a">0.42</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">1464</field>
+            <field name="inc_to">3111</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1s_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1s_2016"/>
+            <field name="inc_from">3111</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.53</field>
+            <field name="coeff_b">405.808</field>          
+        </record>
+        
+         <record id="au_tax_schedule_2s_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_2s"/>
+            <field name="name">Tax Free Threshold (with FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_2s_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">395</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">395</field>
+            <field name="inc_to">493</field>
+            <field name="coeff_a">0.29</field>
+            <field name="coeff_b">106.9673</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">493</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.21</field>
+            <field name="coeff_b">67.4642</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3677</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.375</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.42</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2s_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2s_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.53</field>
+            <field name="coeff_b">577.3662</field>          
+        </record>
+              
+        <record id="au_tax_schedule_3s_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_3s"/>
+            <field name="name">Foreign Resident (with FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_3s_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3250</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3s_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3450</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3s_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.355</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3s_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.4</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3s_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.41</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3s_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3s_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.51</field>
+            <field name="coeff_b">415.3646</field>          
+        </record>
+                
+        <record id="au_tax_schedule_5s_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_5s"/>
+            <field name="name">Full Medicare Exemption (with FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_5s_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3277</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3577</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.355</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.4</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">1787</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.41</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+        <record id="au_tax_schedule_5s_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5s_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.51</field>
+            <field name="coeff_b">577.3654</field>          
+        </record>
+                
+        <record id="au_tax_schedule_6s_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_6s"/>
+            <field name="name">Half Medicare Exemption (with FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_6s_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">660</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">660</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.24</field>
+            <field name="coeff_b">100.5087</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">826</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">198.4875</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">826</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3377</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">1025</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3577</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.3677</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.365</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.41</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.42</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6s_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6s_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.52</field>
+            <field name="coeff_b">577.366</field>          
+        </record>
+        
+        <record id="au_tax_schedule_1hs_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_1hs"/>
+            <field name="name">No Tax Free Threshold (with HELP/TSL &amp; FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">45</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">0.19</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">45</field>
+            <field name="inc_to">361</field>
+            <field name="coeff_a">0.2321</field>
+            <field name="coeff_b">1.8961</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">361</field>
+            <field name="inc_to">690</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">690</field>
+            <field name="inc_to">809</field>
+            <field name="coeff_a">0.4077</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">809</field>
+            <field name="inc_to">928</field>
+            <field name="coeff_a">0.4127</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">928</field>
+            <field name="inc_to">932</field>
+            <field name="coeff_a">0.4277</field>
+            <field name="coeff_b">43.69</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">932</field>
+            <field name="inc_to">995</field>
+            <field name="coeff_a">0.4250</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">995</field>
+            <field name="inc_to">1095</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1095</field>
+            <field name="inc_to">1188</field>
+            <field name="coeff_a">0.435</field>
+            <field name="coeff_b">41.1734</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1188</field>
+            <field name="inc_to">1216</field>
+            <field name="coeff_a">0.48</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1216</field>
+            <field name="inc_to">1298</field>
+            <field name="coeff_a">0.485</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1298</field>
+            <field name="inc_to">1464</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1464</field>
+            <field name="inc_to">1583</field>
+            <field name="coeff_a">0.505</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">1583</field>
+            <field name="inc_to">3111</field>
+            <field name="coeff_a">0.51</field>
+            <field name="coeff_b">94.6542</field>          
+        </record>
+        <record id="au_tax_schedule_1hs_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_1hs_2016"/>
+            <field name="inc_from">3111</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.61</field>
+            <field name="coeff_b">405.808</field>          
+        </record>
+
+         <record id="au_tax_schedule_2hs_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_2hs"/>
+            <field name="name">Tax Free Threshold (with HELP/TSL &amp; FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">395</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">395</field>
+            <field name="inc_to">493</field>
+            <field name="coeff_a">0.29</field>
+            <field name="coeff_b">106.9673</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">493</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.21</field>
+            <field name="coeff_b">67.4642</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3477</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.4077</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.4127</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.4277</field>
+            <field name="coeff_b">165.4431</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.4250</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.43</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.435</field>
+            <field name="coeff_b">161.9815</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.48</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.485</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.505</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.51</field>
+            <field name="coeff_b">231.2123</field>          
+        </record>
+        <record id="au_tax_schedule_2hs_2016_line16" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_2hs_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.61</field>
+            <field name="coeff_b">577.3662</field>          
+        </record>
+        
+        <record id="au_tax_schedule_3hs_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_3hs"/>
+            <field name="name">Foreign Resident (with HELP/TSL &amp; FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3250</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3850</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.39</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.405</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.41</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.415</field>
+            <field name="coeff_b">0.3250</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.46</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.465</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.485</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">69.2308</field>          
+        </record>
+        <record id="au_tax_schedule_3hs_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_3hs_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.59</field>
+            <field name="coeff_b">415.3846</field>          
+        </record>
+        
+        <record id="au_tax_schedule_5hs_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_5hs"/>
+            <field name="name">Full Medicare Exemption (with HELP/TSL &amp; FS debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3277</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3877</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.3927</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.4077</field>
+            <field name="coeff_b">165.4423</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.405</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.41</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.415</field>
+            <field name="coeff_b">161.9808</field>          
+        </record>
+        <record id="au_tax_schedule_5hs_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.46</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5hs_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.465</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5hs_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5hs_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.485</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5hs_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.49</field>
+            <field name="coeff_b">231.2115</field>          
+        </record>
+         <record id="au_tax_schedule_5hs_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_5hs_2016"/>
+            <field name="inc_from">3461</field>
+            <field name="inc_to">999999</field>
+            <field name="coeff_a">0.59</field>
+            <field name="coeff_b">577.3654</field>          
+        </record>
+        
+        <record id="au_tax_schedule_6hs_2016" model="hr.payroll.paygw.table">
+            <field name="schedule" ref="au_tax_schedule_6hs"/>
+            <field name="name">Half Medicare Exemption (with HELP/TSL &amp; FS Debt debt) (2016)</field>
+            <field name="year">2016</field>
+            <field name="date_from">2015-07-01</field>
+            <field name="date_to">2016-06-30</field>
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line1" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">0</field>
+            <field name="inc_to">355</field>
+            <field name="coeff_a">0</field>
+            <field name="coeff_b">0</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line2" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">355</field>
+            <field name="inc_to">660</field>
+            <field name="coeff_a">0.19</field>
+            <field name="coeff_b">67.4635</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line3" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">660</field>
+            <field name="inc_to">711</field>
+            <field name="coeff_a">0.24</field>
+            <field name="coeff_b">100.5087</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line4" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">711</field>
+            <field name="inc_to">826</field>
+            <field name="coeff_a">0.3777</field>
+            <field name="coeff_b">198.4875</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line5" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">826</field>
+            <field name="inc_to">1040</field>
+            <field name="coeff_a">0.3377</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line6" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1040</field>
+            <field name="inc_to">1159</field>
+            <field name="coeff_a">0.3977</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line7" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1159</field>
+            <field name="inc_to">1278</field>
+            <field name="coeff_a">0.4027</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line8" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1278</field>
+            <field name="inc_to">1282</field>
+            <field name="coeff_a">0.4177</field>
+            <field name="coeff_b">165.4429</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line9" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1282</field>
+            <field name="inc_to">1345</field>
+            <field name="coeff_a">0.4150</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line10" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1345</field>
+            <field name="inc_to">1445</field>
+            <field name="coeff_a">0.42</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line11" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1445</field>
+            <field name="inc_to">1538</field>
+            <field name="coeff_a">0.425</field>
+            <field name="coeff_b">161.9813</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line12" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1538</field>
+            <field name="inc_to">1566</field>
+            <field name="coeff_a">0.47</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line13" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1566</field>
+            <field name="inc_to">1648</field>
+            <field name="coeff_a">0.475</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line14" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1648</field>
+            <field name="inc_to">1814</field>
+            <field name="coeff_a">0.48</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line15" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1814</field>
+            <field name="inc_to">1933</field>
+            <field name="coeff_a">0.495</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line16" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
+            <field name="inc_from">1933</field>
+            <field name="inc_to">3461</field>
+            <field name="coeff_a">0.5</field>
+            <field name="coeff_b">231.2121</field>          
+        </record>
+        <record id="au_tax_schedule_6hs_2016_line17" model="hr.payroll.paygw.table.line">
+            <field name="table_id" ref="au_tax_schedule_6hs_2016"/>
             <field name="inc_from">3461</field>
             <field name="inc_to">999999</field>
             <field name="coeff_a">0.6</field>

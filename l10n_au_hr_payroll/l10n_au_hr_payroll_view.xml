@@ -54,11 +54,13 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Australian PAYGW Table">
+				   <group>
 				   <field name="schedule" on_change="onchange_year(year,schedule)"/>
                    <field name="year" select="1" on_change="onchange_year(year,schedule)"/>
                    <field name="name" select="1"/>
                    <field name="date_from"/>
                    <field name="date_to"/>
+                   </group>
                    <newline/>
                    <separator colspan="4"/>
                    <newline/>
