@@ -24,7 +24,7 @@
     'category': 'Localization',
     'author': 'One Click Software',
     'depends': ['hr_payroll'],
-    'version': '0.1',
+    'version': '0.2',
     'description': """
 Australian Payroll Rules.
 ======================
@@ -36,6 +36,7 @@ WORK IN PROGRESS
     'data':[
         'l10n_au_hr_payroll_data.xml',
         'l10n_au_hr_payroll_view.xml',
+		'security/ir.model.access.csv',
     ],
     'installable': True
  }
