@@ -3,7 +3,7 @@
 #
 #    Odoo, Open Source Management Solution
 #    Copyright (C) 2014 One Click Software (<http://oneclick.solutions>)
-#	 Contributed to the Odoo - Australian and New Zealand localisation project
+#	 Contributed to the Odoo - Australian localisation project
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,5 +19,26 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+{
+	'name': 'Australia - Payroll',
+    'category': 'Localization',
+    'author': 'One Click Software',
+    'depends': ['hr_payroll'],
+    'version': '0.2',
+    'description': """
+Australian Payroll Rules.
+=========================
+Support for Australian payroll
 
+WORK IN PROGRESS
+    """,
+
+    'auto_install': False,
+    'website': 'http://oneclick.solutions',
+    'data':[
+        'data/l10n_au_hr_payroll_data.xml',
+        'views/l10n_au_hr_payroll_view.xml',
+		'security/ir.model.access.csv',
+    ],
+    'installable': True
+ }

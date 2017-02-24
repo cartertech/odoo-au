@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+        <record id="hr_payroll_tax_schedule_form" model="ir.ui.view">
+            <field name="name">hr.payroll.tax.schedule.form</field>
+            <field name="model">hr.payroll.tax.schedule</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Australian Tax Schedule">
+                   <field name="name" select="1"/>
+                   <field name="schedule"/>
+                </form>
+          </field>
+        </record>
+        
+        <record id="hr_payroll_tax_schedule_search" model="ir.ui.view">
+            <field name="name">hr.payroll.tax.schedule.search</field>
+            <field name="model">hr.payroll.tax.schedule</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Australian Tax Schedule">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        
+        <record id="hr_payroll_tax_schedule_tree" model="ir.ui.view">
+          <field name="name">hr.payroll.tax.schedule.tree</field>
+          <field name="model">hr.payroll.tax.schedule</field>
+          <field name="type">tree</field>
+          <field name="arch" type="xml">
+              <tree string="Australian Tax Schedule">
+                   <field name="name"/>
+                   <field name="schedule"/>
+                </tree>
+            </field>
+        </record>
+                
+      <record id="action_hr_payroll_tax_schedule_tree" model="ir.actions.act_window">
+          <field name="name">Australian Tax Scales</field>
+          <field name="res_model">hr.payroll.tax.schedule</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+          <field name="view_id" ref="hr_payroll_tax_schedule_tree"/>
+          <field name="search_view_id" ref="hr_payroll_tax_schedule_search"/>
+      </record>
+  
+      <menuitem id="menu_hr_payroll_tax_schedule_tree" action="action_hr_payroll_tax_schedule_tree" parent="hr_payroll.menu_hr_payroll_configuration"/>
+      
+            <record id="hr_payroll_paygw_table_form" model="ir.ui.view">
+            <field name="name">hr.payroll.paygw.table.form</field>
+            <field name="model">hr.payroll.paygw.table</field>
+            <field name="type">form</field>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                <form string="Australian PAYGW Table">
+				   <group>
+				   <field name="schedule"/>
+                   <field name="year" select="1"/>
+                   <field name="name" select="1"/>
+                   <field name="date_from"/>
+                   <field name="date_to"/>
+                   </group>
+                   <newline/>
+                   <separator colspan="4"/>
+                   <newline/>
+                   <field name="line_ids" nolabel="1" colspan="4" widget="one2many_list">
+                       <tree string="Lines" editable="top">
+                           <field name="inc_from"/>
+                           <field name="inc_to"/>
+                           <field name="coeff_a"/>
+                           <field name="coeff_b"/>
+                       </tree>
+                   </field>
+                </form>
+          </field>
+        </record>
+        
+        <record id="hr_payroll_paygw_table_search" model="ir.ui.view">
+            <field name="name">hr.payroll.paygw.table.search</field>
+            <field name="model">hr.payroll.paygw.table</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Australian Tax Table">
+                    <field name="name"/>
+                    <field name="year"/>
+                </search>
+            </field>
+        </record>
+        
+        <record id="hr_payroll_paygw_table_tree" model="ir.ui.view">
+          <field name="name">hr.payroll.paygw.table.tree</field>
+          <field name="model">hr.payroll.paygw.table</field>
+          <field name="type">tree</field>
+          <field name="arch" type="xml">
+              <tree string="Australian Tax Table">
+                   <field name="name"/>
+                   <field name="year"/>
+                </tree>
+            </field>
+        </record>
+                
+      <record id="action_hr_payroll_paygw_table_tree" model="ir.actions.act_window">
+          <field name="name">Australian Tax Table</field>
+          <field name="res_model">hr.payroll.paygw.table</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+          <field name="view_id" ref="hr_payroll_paygw_table_tree"/>
+          <field name="search_view_id" ref="hr_payroll_paygw_table_search"/>
+      </record>
+  
+      <menuitem id="menu_hr_payroll_paygw_table_tree" action="action_hr_payroll_paygw_table_tree" parent="hr_payroll.menu_hr_payroll_configuration"/>
+      
+       <record id="hr_employee_view_form_au" model="ir.ui.view">
+          <field name="name">hr.employee.view.form.au</field>
+          <field name="model">hr.employee</field>
+          <field name="type">form</field>
+          <field name="inherit_id" ref="hr.view_employee_form"/>
+          <field name="priority">30</field>
+          <field name="arch" type="xml">
+              <notebook position="inside">
+                  <page string="Australian Payroll">
+                    <group>
+                        <group string="Tax">
+                            <field name="taxtable"/>
+                        </group>
+                        <group string="Superannuation">
+                            <field name="superfund"/>
+                            <field name="super_acct"/>
+                        </group>
+                        <group string="Payslips">
+                            <field name="payslip_delivery"/>
+                        </group>
+                    </group>
+                  </page>
+              </notebook>
+          </field>
+      </record>
+  </data>
+</openerp>

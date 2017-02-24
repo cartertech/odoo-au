@@ -20,39 +20,25 @@
 #
 ##############################################################################
 {
-    'name': 'Australia - Accounting',
-    'version': '0.1',
+	'name': 'Australia - Payroll',
+    'category': 'Localization',
     'author': 'One Click Software',
-    'website': 'http://oneclick.solutions',
-    'category': 'Localization/Account Charts',
+    'depends': ['hr_payroll'],
+    'version': '0.2',
     'description': """
-This is the module to manage the Australian accounting chart in Odoo.
-===========================================================================================
+Australian Payroll Rules.
+=========================
+Support for Australian payroll
 
-Australian accounting charts.
-
-Limitations
-------------
-The chart of accounts currently includes an item for WET but there is no WET in the tax chart.
-
+WORK IN PROGRESS
     """,
-    'depends': [
-        'base',
-        'account',
-        'base_iban',
-        'account_chart',
-		'account_anglo_saxon'
-    ],
-    'data': [
-        'account_chart.xml',
-        'account_tax_code.xml',
-        'account_chart_template.xml',
-        'account_tax.xml',
-        'l10n_au_wizard.xml'
-    ],
-    'demo': [],
-    'installable': True,
-    'images': [],
-}
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
+    'auto_install': False,
+    'website': 'http://oneclick.solutions',
+    'data':[
+        'data/l10n_au_hr_payroll_data.xml',
+        'views/l10n_au_hr_payroll_view.xml',
+		'security/ir.model.access.csv',
+    ],
+    'installable': True
+ }

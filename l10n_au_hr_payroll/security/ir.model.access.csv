@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_create","perm_unlink","perm_read","perm_write"
+"access_hr_payroll_tax_schedule_mgr","hr_payroll_tax_schedule manager","l10n_au_hr_payroll.model_hr_payroll_tax_schedule","hr_payroll.group_hr_payroll_user","True","True","True","True"
+"access_hr_payroll_paygw_table_schedule_mgr","hr_payroll_paygw_table manager","l10n_au_hr_payroll.model_hr_payroll_paygw_table","hr_payroll.group_hr_payroll_user","True","True","True","True"
+"access_hr_payroll_paygw_line_mgr","hr_payroll_paygw_line manager","l10n_au_hr_payroll.model_hr_payroll_paygw_table_line","hr_payroll.group_hr_payroll_user","True","True","True","True"
