@@ -9,5 +9,8 @@ You are free to create your own branches (of course!) but the two current branch
 *master*
 This is the primary branch - code that's in here should be stable.
 
-*payroll*
-This is for the Australian payroll rules. This code is not stable and is incomplete.
+*10.0*
+This is the work in progress branch for Odoo 10
+
+*8.0*
+This is code for Odoo 8
