@@ -46,17 +46,18 @@
           <field name="search_view_id" ref="hr_payroll_tax_schedule_search"/>
       </record>
   
-      <menuitem id="menu_hr_payroll_tax_schedule_tree" action="action_hr_payroll_tax_schedule_tree" parent="hr_payroll.payroll_configure"/>
+      <menuitem id="menu_hr_payroll_tax_schedule_tree" action="action_hr_payroll_tax_schedule_tree" parent="hr_payroll.menu_hr_payroll_configuration"/>
       
             <record id="hr_payroll_paygw_table_form" model="ir.ui.view">
             <field name="name">hr.payroll.paygw.table.form</field>
             <field name="model">hr.payroll.paygw.table</field>
             <field name="type">form</field>
+            <field name="priority">30</field>
             <field name="arch" type="xml">
                 <form string="Australian PAYGW Table">
 				   <group>
-				   <field name="schedule" on_change="onchange_year(year,schedule)"/>
-                   <field name="year" select="1" on_change="onchange_year(year,schedule)"/>
+				   <field name="schedule"/>
+                   <field name="year" select="1"/>
                    <field name="name" select="1"/>
                    <field name="date_from"/>
                    <field name="date_to"/>
@@ -109,13 +110,14 @@
           <field name="search_view_id" ref="hr_payroll_paygw_table_search"/>
       </record>
   
-      <menuitem id="menu_hr_payroll_paygw_table_tree" action="action_hr_payroll_paygw_table_tree" parent="hr_payroll.payroll_configure"/>
+      <menuitem id="menu_hr_payroll_paygw_table_tree" action="action_hr_payroll_paygw_table_tree" parent="hr_payroll.menu_hr_payroll_configuration"/>
       
        <record id="hr_employee_view_form_au" model="ir.ui.view">
           <field name="name">hr.employee.view.form.au</field>
           <field name="model">hr.employee</field>
           <field name="type">form</field>
           <field name="inherit_id" ref="hr.view_employee_form"/>
+          <field name="priority">30</field>
           <field name="arch" type="xml">
               <notebook position="inside">
                   <page string="Australian Payroll">

@@ -20,33 +20,26 @@
 #
 ##############################################################################
 
-from openerp.osv import fields, orm
+from odoo import fields, models
 
 # Tax Table for storing the various schedules of tables (e.g. No Tax Free,
 # Tax Free, Foreign Resident, etc)
 
-class hr_payroll_tax_schedule(orm.Model):
+class HrPayrollTaxSchedule(models.Model):
 	_name = 'hr.payroll.tax.schedule'
 	_description = 'Australian tax table'
 	
-	_columns = {
-	'name': fields.char('Description', size=128),
-	'schedule': fields.char('Tax Scale', size=10),
-	'paygw_scales': fields.one2many('hr.payroll.paygw.table','schedule','Tax Scales'),
-	}
+	name = fields.Char('Description', size=128)
+	schedule = fields.Char('Tax Scale', size=10)
+	paygw_scales = fields.One2many('hr.payroll.paygw.table','schedule','Tax Scales')
 
-hr_payroll_tax_schedule()
-
-class hr_employee(orm.Model):
+class HrEmployee(models.Model):
 	_inherit = 'hr.employee'
 		
-	_columns = {
-		'superfund': fields.many2one('res.partner', 'Superannuation Fund'),
-		'super_acct': fields.char('Superannuation Account', size=50),
-		'taxtable': fields.many2one('hr.payroll.tax.schedule','Tax Schedule'),
-		'payslip_delivery': fields.selection([('p','Print'),('e','Email'),('b','Both')], 'Payslip Delivery'),
-  }
-	
+	superfund = fields.Many2one('res.partner', 'Superannuation Fund')
+	super_acct = fields.Char('Superannuation Account', size=50)
+	taxtable = fields.Many2one('hr.payroll.tax.schedule','Tax Schedule')
+	payslip_delivery = fields.Selection([('p','Print'),('e','Email'),('b','Both')], 'Payslip Delivery')	
 	
 	def calculate_paygw(self, date, taxinc):
 		""" Return the amount of tax to be withheld for the employee for the
@@ -77,42 +70,37 @@ class hr_employee(orm.Model):
 
 # Withholding table for a specific tax year
 
-class hr_payroll_paygw_table(orm.Model):
+class HrPayrollPaygwTable(models.Model):
 	_name = 'hr.payroll.paygw.table'
 	_description = 'Australian PAYG Withholding Table'
 
-	def onchange_year(self, cr, uid, ids, year, sched):
-		res = {}
-		if sched:
-			sched_obj = self.pool.get('hr.payroll.tax.schedule').browse(cr, uid, sched)
-			res['name'] = sched_obj.name
-		else:
-			res['name'] = ''
-		if year:
-			res['name'] += ' (' + str(year) + ')'
-		
-		return {'value': res}
-
-	_columns = {
-		'schedule': fields.many2one('hr.payroll.tax.schedule', 'Tax Scale'),
-		'name': fields.char('Description', size=128),
-		'year': fields.integer('Year', required=True),
-		'date_from': fields.date('Date From'),
-		'date_to': fields.date('Date To'),
-		'line_ids': fields.one2many('hr.payroll.paygw.table.line', 'table_id', 'Lines'),
-		}
+#	def onchange_year(self, cr, uid, ids, year, sched, context=None):
+#		res = {}
+#		if sched:
+#			sched_obj = self.pool.get('hr.payroll.tax.schedule').browse(cr, uid, sched)
+#			res['name'] = sched_obj.name
+#		else:
+#			res['name'] = ''
+#		if year:
+#			res['name'] += ' (' + str(year) + ')'
+#		
+#		return {'value': res}
+	schedule = fields.Many2one('hr.payroll.tax.schedule', 'Tax Scale')
+	name = fields.Char('Description', size=128)
+	year = fields.Integer('Year', required=True)
+	date_from = fields.Date('Date From')
+	date_to = fields.Date('Date To')
+	line_ids = fields.One2many('hr.payroll.paygw.table.line', 'table_id', 'Lines')
 
 
-class hr_payroll_paygw_table_line(orm.Model):
+class HrPayrollPaygwTableLine(models.Model):
 	_name = 'hr.payroll.paygw.table.line'
 	_description = 'PAYG Line'
-	_columns = {
-		'table_id': fields.many2one('hr.payroll.paygw.table', 'Table'),
-		'inc_from': fields.float('Income From', digits=(16, 2), required=True),
-		'inc_to': fields.float('Income To', digits=(16, 2), required=True),
-		'coeff_a': fields.float('Coefficient (a)', digits=(16, 4)),
-		'coeff_b': fields.float('Coefficient (b)', digits=(16, 4)),
-		}
+	
+	table_id = fields.Many2one('hr.payroll.paygw.table', 'Table')
+	inc_from = fields.Float('Income From', digits=(16, 2), required=True)
+	inc_to = fields.Float('Income To', digits=(16, 2), required=True)
+	coeff_a = fields.Float('Coefficient (a)', digits=(16, 4))
+	coeff_b = fields.Float('Coefficient (b)', digits=(16, 4))
 
-	_rec_name = 'inc_to'
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+#	_rec_name = 'inc_to'

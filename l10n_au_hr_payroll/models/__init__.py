@@ -19,26 +19,4 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-	'name': 'Australia - Payroll',
-    'category': 'Localization',
-    'author': 'One Click Software',
-    'depends': ['hr_payroll'],
-    'version': '0.2',
-    'description': """
-Australian Payroll Rules.
-=========================
-Support for Australian payroll
-
-WORK IN PROGRESS
-    """,
-
-    'auto_install': False,
-    'website': 'http://oneclick.solutions',
-    'data':[
-        'data/l10n_au_hr_payroll_data.xml',
-        'views/l10n_au_hr_payroll_view.xml',
-		'security/ir.model.access.csv',
-    ],
-    'installable': True
- }
+import l10n_au_hr_payroll
