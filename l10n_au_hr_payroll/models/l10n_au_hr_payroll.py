@@ -20,7 +20,8 @@
 #
 ##############################################################################
 
-from odoo import fields, models
+from odoo import api, fields, models
+import pdb
 
 # Tax Table for storing the various schedules of tables (e.g. No Tax Free,
 # Tax Free, Foreign Resident, etc)
@@ -74,6 +75,23 @@ class HrPayrollPaygwTable(models.Model):
 	_name = 'hr.payroll.paygw.table'
 	_description = 'Australian PAYG Withholding Table'
 
+	schedule = fields.Many2one('hr.payroll.tax.schedule', 'Tax Scale')
+	name = fields.Char('Description', size=128)
+	year = fields.Integer('Year', required=True)
+	date_from = fields.Date('Date From')
+	date_to = fields.Date('Date To')
+	line_ids = fields.One2many('hr.payroll.paygw.table.line', 'table_id', 'Lines')
+	
+	@api.onchange('schedule','year')
+	def change_year(self):
+		if self.schedule:
+			self.name = self.schedule.name
+		else:
+			self.name = ''
+			
+		if self.year:
+			self.name += ' (' + str(self.year) + ')'
+		
 #	def onchange_year(self, cr, uid, ids, year, sched, context=None):
 #		res = {}
 #		if sched:
@@ -85,13 +103,6 @@ class HrPayrollPaygwTable(models.Model):
 #			res['name'] += ' (' + str(year) + ')'
 #		
 #		return {'value': res}
-	schedule = fields.Many2one('hr.payroll.tax.schedule', 'Tax Scale')
-	name = fields.Char('Description', size=128)
-	year = fields.Integer('Year', required=True)
-	date_from = fields.Date('Date From')
-	date_to = fields.Date('Date To')
-	line_ids = fields.One2many('hr.payroll.paygw.table.line', 'table_id', 'Lines')
-
 
 class HrPayrollPaygwTableLine(models.Model):
 	_name = 'hr.payroll.paygw.table.line'
