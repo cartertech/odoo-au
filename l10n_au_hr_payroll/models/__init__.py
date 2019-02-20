@@ -19,4 +19,4 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-import l10n_au_hr_payroll
+from . import l10n_au_hr_payroll

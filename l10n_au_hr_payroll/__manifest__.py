@@ -24,13 +24,11 @@
     'category': 'Localization',
     'author': 'One Click Software',
     'depends': ['hr_payroll'],
-    'version': '0.3',
+    'version': '0.4',
     'description': """
 Australian Payroll Rules.
 =========================
 Support for Australian payroll
-
-Contains tax tables for the 2018/19 financial year
 
 WORK IN PROGRESS
     """,
